@@ -1,31 +1,28 @@
 # MB_House_Pricing_Regression
-IH midterm project
+Ironhack midterm project
 
-TEST TEST TEST
+## Overview
+
+My project looks over house sale data in the Seattle, WA area in 2014-15 and 
+attempts to understand the data by looking at trends and creating a model to 
+predict the prices of houses if they sold in the area.
+
+##Method
+
+In working through this project, I combed through the raw fifa data to extract the columns 
+I thought may affect my prediction model and cleaned the data from any null values and outliers.
+I used Jupyter Notebook with tools such as heatmap, OneHotEncoder, Normalizer, and other 
+\resources from the sklearn library. I also used MySQL, Tableau, and Slides.com to manipulate 
+the data, create visualizations, and present my findings to my peers. 
+
+##Conclusion
+
+Ultimately, a model with an r squared value of 70.5% was created from a linear regression model:
+the most accurate iteration I could create so far. 
 
 
-# Fifa_Moneyball
-Personal fifa project
-
-![image](https://user-images.githubusercontent.com/71361520/136672613-b5fa64e1-b8a4-4796-985a-9ae8d5843a50.png)
 
 
-My project asks the data "What actually influences the wages paid to players?"
+Tableau Link: https://public.tableau.com/app/profile/matthew.w.barger/viz/HousingPriceData_16387607172130/7-9?publish=yes
 
-The inspirations behind this focus stems from my knowledge of NFL trends with
-highly drafted prospects tending to receive high value contracts no matter
-their performance, and vice versa with low draft picks/undrafted players, 
-throughout their career. I have no knowledge of Fifa trends and wanted to see
-if there was any similarity in through process in those who construct player
-contracts.
-
-In working through this project, I used Python with tools such as heatmap, 
-OneHotEncoder, Normalizer, and other resources from the sklearn library.
-
-I combed through the raw fifa data to extract the columns I thought may affect
-contracts and converted each column to its appropriate data type while scaling 
-them as necessary.
-
-Ultimately, no clear conclusions were drawn which, in itself is a conclusion 
-that the league(s) which contribute to FIFA do not function in the same 
-pattern that the NFL does in American Football.
+Slides Presentation: https://slides.com/mbarger2/house-pricing-presentation
