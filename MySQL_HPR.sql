@@ -64,34 +64,25 @@ and (grade > 4) and (price <300000);
 # there are no fitting results that fit all of the prospective homeowner's requests. There are 3 homes with 5-6 beds (not 3-4)
 
 #12 Show which prices are twice more than the average of all the properties in the database.
-with cte_temp as (
-select * from house_price_data
-where price >  2* (
-select (sum(price)/count(*)) from house_price_data
-)
-)
-select price, (sum(price)/count(*)) as average_price from cte_temp
-order by price asc;
+
+select price, id from house_price_data 
+where price > 2*( select avg(price) from house_price_data)
+order by price;
 
 #13 Create a view of the query in #12  
-#(NOT FINISHED?)
+
 create or replace view twice_average as
-with cte_temp as (
-select * from house_price_data
-where price > 2* (
-select sum(price)/count(*) from house_price_data
-)
-)
-select price, sum(price)/count(*) as average_price from cte_temp
-order by price asc;
+select price, id from house_price_data 
+where price > 2*( select avg(price) from house_price_data)
+order by price;
 select * from twice_average;
 
 #14 Most customers are interested in properties with three or four bedrooms. 
 #What is the difference in average prices of the properties with three and four bedrooms?
 #(NOT FINISHED?)
-select bedrooms, price, (price - LAG(price,1) OVER( order by bedrooms)) price_diff from house_price_data
-where (bedrooms = 3) or (bedrooms = 4)
-group by bedrooms;
+
+select( (select avg(price) from house_price_data where bedrooms = 4) -
+( select avg(price) from house_price_data where bedrooms = 3))fourthreediff;
 
 #15 Show all zipcodes for properties in the database
 SELECT DISTINCT zipcode from house_price_data;
@@ -104,3 +95,9 @@ where yr_renovated != 0;
 #(NOT FINISHED)
 select id, price, rank() over (order by price desc) as price_rank from house_price_data
 where rank() over (order by price desc) between 10 and 12;
+
+Select * from 
+(
+select id, price, rank() over (order by price desc) as price_rank from house_price_data
+)allrank
+where price_rank = 11;
