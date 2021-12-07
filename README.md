@@ -17,8 +17,7 @@ the data, create visualizations, and present my findings to my peers.
 
 ## Conclusion
 
-Ultimately, a model with an r squared value of 70.5% was created from a linear regression model:
-the most accurate iteration I could create so far. 
+Ultimately, my Linear Regression model yielded the most successful outcome with an r squared value of 70.66%.
 
 
 
