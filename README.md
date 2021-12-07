@@ -7,7 +7,7 @@ My project looks over house sale data in the Seattle, WA area in 2014-15 and
 attempts to understand the data by looking at trends and creating a model to 
 predict the prices of houses if they sold in the area.
 
-##Method
+## Method
 
 In working through this project, I combed through the raw fifa data to extract the columns 
 I thought may affect my prediction model and cleaned the data from any null values and outliers.
@@ -15,7 +15,7 @@ I used Jupyter Notebook with tools such as heatmap, OneHotEncoder, Normalizer, a
 \resources from the sklearn library. I also used MySQL, Tableau, and Slides.com to manipulate 
 the data, create visualizations, and present my findings to my peers. 
 
-##Conclusion
+## Conclusion
 
 Ultimately, a model with an r squared value of 70.5% was created from a linear regression model:
 the most accurate iteration I could create so far. 
