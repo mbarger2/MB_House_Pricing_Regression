@@ -79,8 +79,6 @@ select * from twice_average;
 
 #14 Most customers are interested in properties with three or four bedrooms. 
 #What is the difference in average prices of the properties with three and four bedrooms?
-#(NOT FINISHED?)
-
 select( (select avg(price) from house_price_data where bedrooms = 4) -
 ( select avg(price) from house_price_data where bedrooms = 3))fourthreediff;
 
@@ -92,7 +90,6 @@ SELECT * from house_price_data
 where yr_renovated != 0;
 
 #17 Provide the details of the 11th most expensive property in your database.
-#(NOT FINISHED)
 select id, price, rank() over (order by price desc) as price_rank from house_price_data
 where rank() over (order by price desc) between 10 and 12;
 
