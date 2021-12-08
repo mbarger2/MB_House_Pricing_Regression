@@ -19,7 +19,10 @@ the data, create visualizations, and present my findings to my peers.
 
 Ultimately, my Linear Regression model yielded the most successful outcome with an r squared value of 70.66%.
 
+## Reflection
 
+I would have liked to have analyzed the details of my linear model through statistics other than r-squared 
+with more time as well as continue tweaking the combination of variables used in the model.
 
 
 Tableau Link: https://public.tableau.com/app/profile/matthew.w.barger/viz/HousingPriceData_16387607172130/7-9?publish=yes
