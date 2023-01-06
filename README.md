@@ -17,9 +17,15 @@ the data, create visualizations, and present my findings to my peers.
 
 ## Conclusion
 
-Ultimately, my Linear Regression model yielded the most successful outcome with an r squared value of 70.66%.
+Ultimately, my most accurate Linear Regression model yielded an r squared value of 70.66%.
 
+## Reflection
 
+I would have liked to have analyzed the details of my linear model through statistics other than r-squared 
+with more time as well as continue tweaking the combination of variables used in the model. Additionally, 
+I could work more with using log and power functions to better organize columns of data though from my 
+initial observations, most if not all data was normalized and in its most efficient form to be analyzed 
+already.
 
 
 Tableau Link: https://public.tableau.com/app/profile/matthew.w.barger/viz/HousingPriceData_16387607172130/7-9?publish=yes
