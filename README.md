@@ -17,7 +17,7 @@ the data, create visualizations, and present my findings to my peers.
 
 ## Conclusion
 
-Ultimately, my Linear Regression model yielded the most successful outcome with an r squared value of 70.66%.
+Ultimately, my most accurate Linear Regression model yielded an r squared value of 70.66%.
 
 ## Reflection
 
