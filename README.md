@@ -10,9 +10,10 @@ predict the prices of houses if they sold in the area.
 ## Method
 
 In working through this project, I combed through the raw data to extract the columns 
-I thought may affect my prediction model and cleaned the data from any null values and outliers.
-I used Jupyter Notebook with tools such as heatmap, OneHotEncoder, Normalizer, and other 
-resources from the sklearn library. I then used Tableau and Slides.com to manipulate 
+I thought may affect my prediction model and cleaned the data from any null values and outliers. I also created
+new columns from existing data (ie 'new bath count' and 'new reno') to adjust the data to make it more model-friendly 
+and to focus on just the valuable parts of the data. I used Jupyter Notebook with tools such as heatmap, OneHotEncoder, 
+Normalizer, and other resources from the sklearn library. I then used Tableau and Slides.com to manipulate 
 the data, create visualizations, and present my findings to my peers. 
 
 ## Conclusion
